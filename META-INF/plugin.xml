@@ -1,42 +1,42 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
-  <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <id>com.jonathonstaff.androidaccessors</id>
+    <name>AndroidAccessors</name>
+    <version>1.0</version>
+    <vendor email="jon@nplexity.com" url="http://www.jonathonstaff.com">Jonathon Staff</vendor>
 
-  <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <small>most HTML tags may be used</small>
+    <description><![CDATA[
+      AndroidAccessors is designed to generate getters and setters for Android projects.  It removes leading m's from field names so the external methods are cleaner.<br>
+      For more details, look at the repo on GitHub:<br>
+      <a href="https://github.com/jonstaff/AndroidAccessors">https://github.com/jonstaff/AndroidAccessors</a>
       ]]></description>
 
-  <change-notes><![CDATA[
-      Add change notes here.<br>
-      <small>most HTML tags may be used</small>
-      ]]>
-  </change-notes>
+    <change-notes><![CDATA[
+        ]]>
+    </change-notes>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
-  <idea-version since-build="107.105"/>
+    <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="107.105"/>
 
-  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <depends>com.intellij.modules.lang</depends>
 
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
+    <application-components>
+        <!-- Add your application components here -->
+    </application-components>
 
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
+    <project-components>
+        <!-- Add your project components here -->
+    </project-components>
 
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+    <actions>
+        <action class="com.jonathonstaff.androidaccessors.AccessorAction"
+                id="com.jonathonstaff.androidaccessors.AccessorAction"
+                text="AndroidAccessors"
+                description="Generates proper Android accessors">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
 </idea-plugin>
