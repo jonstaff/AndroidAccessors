@@ -5,6 +5,8 @@ IntelliJ/Android Studio plugin to generate proper getters and setters for Androi
 
 Android convention dictates that private member variables be prefaced with an 'm', but the default code generation `Getter and Setter` doesn't handle this so gracefully.  AndroidAccessors provides an alternative which generates much cleaner external methods.
 
+AndroidAccessors now supports private static fields with a leading 's' (as per Google's [Code Style Guidelines](https://source.android.com/source/code-style.html)).
+
 ![](AndroidAccessors.gif)
 
 Installation
