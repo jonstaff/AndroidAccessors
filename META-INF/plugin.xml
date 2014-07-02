@@ -1,7 +1,7 @@
 <idea-plugin version="2">
     <id>com.jonathonstaff.androidaccessors</id>
     <name>AndroidAccessors</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="jon@nplexity.com" url="http://www.jonathonstaff.com">Jonathon Staff</vendor>
 
     <description><![CDATA[
@@ -11,6 +11,16 @@
       ]]></description>
 
     <change-notes><![CDATA[
+        Version 1.1
+        <ul>
+            <li>Support for <i>static</i> member variables prefaced with an 's'</li>
+        </ul>
+
+        Version 1.0
+        <ul>
+            <li>Initial release</li>
+        </ul>
+
         ]]>
     </change-notes>
 

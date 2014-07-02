@@ -1,4 +1,5 @@
 package com.jonathonstaff.androidaccessors;
+
 //  Created by jonstaff on 6/23/14.
 
 import com.intellij.psi.JavaPsiFacade;
@@ -50,8 +51,8 @@ public class CodeGenerator {
 
         StringBuilder sb2 = new StringBuilder(field.getName());
 
-        // verify that the first character is an 'm' and the second is uppercase
-        if (sb2.charAt(0) == 'm' && sb2.charAt(1) < 97) {
+        // verify that the first character is an 'm' or an 's' and the second is uppercase
+        if ((sb2.charAt(0) == 'm' || sb.charAt(0) == 's') && sb2.charAt(1) < 97) {
             sb2.deleteCharAt(0);
         }
         sb2.setCharAt(0, Character.toUpperCase(sb2.charAt(0)));
@@ -66,8 +67,8 @@ public class CodeGenerator {
         StringBuilder sb2 = new StringBuilder(field.getName());
         boolean needsThis = true;
 
-        // verify that the first character is an 'm' and the second is uppercase
-        if (sb2.charAt(0) == 'm' && sb2.charAt(1) < 97) {
+        // verify that the first character is an 'm' or an 's' and the second is uppercase
+        if ((sb2.charAt(0) == 'm' || sb.charAt(0) == 's') && sb2.charAt(1) < 97) {
             sb2.deleteCharAt(0);
             needsThis = false;
         }
